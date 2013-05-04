@@ -12,6 +12,10 @@ import org.apache.http.message.BasicNameValuePair;
  */
 public class Logger {
 
+	/* log message to server
+	 * 
+	 * @param string message to log
+	 */
 	public static void write(String strMessage) {
 		
 		List<BasicNameValuePair> listParameter = new ArrayList<BasicNameValuePair>();
@@ -20,6 +24,10 @@ public class Logger {
 		HttpManager.requestHttpPost(ServerProperty.getServerUrl() + ServerProperty.getServerQueryAgent(), listParameter);
 	}
 	
+	/* log with method url
+	 * 
+	 * @param string message to log
+	 */
 	public static void write(String strMethodUrl, String strMessage) {
 		write ( "[" + strMethodUrl + "] " + strMessage);
 	}
