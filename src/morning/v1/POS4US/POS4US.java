@@ -203,13 +203,11 @@ public class POS4US extends Activity implements RadioGroup.OnCheckedChangeListen
 		
 		if(group == radioGroup1) {
 			switch(checkedId) {
-			
 				case R.id.radio_file:
 					getServerIpFromFile();
 					Property.SERVER_ACCESS_MODE = Property.SERVER_ACCESS_FILE_MODE;
 					tvServerIp.setEnabled(false);
 					break;
-			
 				case R.id.radio_input:
 					Property.SERVER_ACCESS_MODE = Property.SERVER_ACCESS_INPUT_MODE;
 					tvServerIp.setEnabled(true);
