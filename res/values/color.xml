@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<resources>        
+    <color name="hall_default">#8fc0fc</color> 
+	<color name="hall_selected">#357EC7</color> 
+	
+	<color name="join_settings_default">#dddddd</color> 
+	<color name="join_settings_selected">#333333</color> 
+	
+	<color name="table_empty">#dddddd</color> 
+	<color name="table_order">#F665AB</color>
+	<color name="table_complete">#FBB917</color> 
+	<color name="table_checkout">#48cccd</color>
+	<color name="table_reserved">#53c5c6</color>
+	
+	<color name="stroke">#000000</color>
+	<color name="white">#ffffff</color>
+	<color name="black">#000000</color>
+	<color name="dark_grey">#333333</color>
+	<color name="grey">#dddddd</color>
+	<color name="skyblue">#C2DFFF</color>
+	<color name="dark_skyblue">#8fc0fc</color>
+	
+	<color name="title_bar">#aaaaaa</color>
+	
+	<color name="category_default">#54c8c9</color>
+	<color name="category_selected">#0d6e6f</color>
+	
+	<color name="current_order_layout">#fffac850</color>
+	<color name="selected_menu">#fab8d8</color>
+	<color name="confirm_cancel_bar">#a8a8a7</color>
+	
+</resources>

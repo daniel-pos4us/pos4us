@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    
+    <!-- Title Bar -->
+    <LinearLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/title_bar"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    
+    <!-- Category -->
+    <HorizontalScrollView 
+        android:id="@+id/horizontalScrollView"
+      	android:layout_height="wrap_content" 
+      	android:layout_width="wrap_content"
+      	android:fadeScrollbars="true"
+      	android:layout_gravity="center" >
+        
+         <LinearLayout
+	        android:id="@+id/category"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:padding="5dp"
+	        android:gravity="center"
+	        android:background="#d7f3f3"
+	        android:orientation="horizontal" />
+     
+	</HorizontalScrollView>
+	    
+    <!-- Menu : Create menu dynamically -->
+    <ScrollView 
+        android:id="@+id/menu_scroll"
+	    android:layout_height="257dp"
+	    android:layout_width="match_parent">
+ 	        
+      <FrameLayout
+        android:id="@+id/frame_menu_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+ 	        
+	</ScrollView>
+	    
+    <!-- Order Status -->
+    <ScrollView 
+        android:id="@+id/order_scroll"
+        android:background="@color/current_order_layout"
+	    android:layout_height="240dp"
+	    android:layout_width="match_parent">
+ 	        
+      <LinearLayout
+        android:id="@+id/order_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="7dp"
+        android:orientation="vertical"
+         />
+ 	        
+	</ScrollView>
+	
+     <!-- Button -->
+    <LinearLayout
+        android:id="@+id/confirm_cancel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/confirm_cancel_bar"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/confirm"
+	        android:layout_width="80dp"
+    	    android:layout_height="25dp"    
+    	    android:textColor="@color/dark_grey"
+    	    android:textSize="14dp"
+    	    android:background="@drawable/color_button_white"           
+       		/>    
+       	<!-- 
+        <Button
+            android:id="@+id/cancel"
+	        android:layout_width="80dp"
+    	    android:layout_height="25dp"    
+    	    android:textColor="@color/dark_grey"
+    	    android:textSize="14dp"
+    	    android:background="@drawable/color_button_white"           
+       		/>
+       	 -->
+    </LinearLayout>
+</LinearLayout>
+    

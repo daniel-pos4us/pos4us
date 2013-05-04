@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/login">
+    
+    <LinearLayout 
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="223dp"
+        android:layout_width="170dp"
+	    android:layout_height="35dp"
+	    android:orientation="horizontal" >
+	    
+        <RadioGroup
+            android:layout_height="30dp"
+            android:layout_width="wrap_content"
+        	android:id="@+id/radioGroup1"
+        	android:orientation="horizontal" >
+        	
+            <RadioButton 
+                android:text="File"
+                android:layout_height="30dp"
+                android:layout_width="wrap_content"
+             	android:id="@+id/radio_file"
+             	android:checked="true"
+             	android:textColor="#000000"
+             />
+            <RadioButton 
+                android:text="Input"
+                android:layout_height="30dp"
+                android:layout_width="wrap_content"
+             	android:id="@+id/radio_input"
+             	android:textColor="#000000"
+             />
+        </RadioGroup>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_marginLeft="155dp"
+        android:layout_width="match_parent"
+	    android:layout_height="35dp"
+	    android:orientation="horizontal" >
+        
+        <TextView  
+            android:id="@+id/txt_ip"
+            android:text="SERVER IP"
+		    android:layout_width="75dp" 
+		    android:layout_height="30dp" 
+		    android:textColor="#000000"
+		    />
+        <EditText  
+            android:id="@+id/input_ip"
+		    android:layout_width="140dp" 
+		    android:layout_height="30dp" 
+		    android:textColor="#000000"
+		    android:background="@drawable/style_id_password"
+		    />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_marginLeft="155dp"
+        android:layout_width="match_parent"
+	    android:layout_height="35dp"
+	    android:orientation="horizontal" >
+        
+        <TextView  
+            android:id="@+id/txt_id"
+            android:text="ID"
+		    android:layout_width="75dp" 
+		    android:layout_height="20dp" 
+		    android:textColor="#000000"
+		    />
+        <EditText  
+            android:id="@+id/input_id"
+            android:text="admin"
+		    android:layout_width="140dp" 
+		    android:layout_height="30dp" 
+		    android:textColor="#000000"
+		    android:hint=""
+		    android:background="@drawable/style_id_password"
+		    />
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_marginLeft="155dp"
+        android:layout_width="match_parent"
+	    android:layout_height="35dp"
+	    android:orientation="horizontal" >
+        <TextView  
+            android:id="@+id/txt_password"
+            android:text="PASSWORD"
+		    android:layout_width="75dp" 
+		    android:layout_height="20dp" 
+		    android:textColor="#000000"
+		    />
+        <EditText  
+            android:id="@+id/input_password"
+            android:text="111"
+		    android:layout_width="140dp" 
+		    android:layout_height="30dp" 
+		    android:textColor="@color/black"
+		    android:inputType="textPassword"
+		    android:background="@drawable/style_id_password"
+		    />
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="270dp"
+        android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:orientation="horizontal" >
+        <Button 
+            android:id="@+id/button_confirm"
+            android:layout_height="40dp"
+            android:layout_width="100dp"
+            android:text="Confirm"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:background="@drawable/style_button"/>
+    </LinearLayout>
+    
+
+</LinearLayout>

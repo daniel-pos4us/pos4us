@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditTextPreference android:title="POS4US Server IP Address" android:summary="Users can change the server IP address" android:key="POS4US_SERVER_IP" android:defaultValue="192.168.1.104" />
+    
+</PreferenceScreen>
