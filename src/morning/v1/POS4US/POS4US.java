@@ -136,10 +136,8 @@ public class POS4US extends Activity implements RadioGroup.OnCheckedChangeListen
 
 		EditText id = (EditText) findViewById(R.id.input_id);
 		EditText password = (EditText) findViewById(R.id.input_password);
-		
 		String strId = StringUtil.notNull(id.getText().toString());
 		String strPassword = StringUtil.notNull(password.getText().toString());
-		
 		int nResult = UserManager.login(strId,strPassword);
 		
     	switch(nResult) {
